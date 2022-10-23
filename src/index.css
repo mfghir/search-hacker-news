@@ -1,13 +1,153 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+
+  padding: 80px;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.searchBar-container {
+  width: 80%;
+  margin: 20px 0;
+}
+
+/* .searchBar-container h1 {} */
+
+.searchBar-container form {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.searchBar-container input {
+  background: none;
+  border: none;
+  border-bottom: 4px solid #c3cfe2;
+
+  width: 50%;
+  padding: 5px 10px;
+  font-size: 20px;
+
+  color: #444;
+}
+
+.searchBar-container input:focus {
+  border-radius: 7px;
+  border: 2px solid #4169e1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 50px 0;
+}
+
+.pagination-container p {
+  margin: 0 20px;
+}
+
+.pagination-container button {
+  outline: none;
+  border: none;
+  background: #4169e1;
+
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #fff;
+
+  cursor: pointer;
+  transition: .4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.news-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.news {
+  width: 45%;
+  margin: 20px 0;
+  background: #fff;
+
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.news>h4 {
+  margin-bottom: .5rem;
+  color: #102a42;
+}
+
+.news .info {
+  color: #617d98;
+  margin-bottom: .5rem;
+}
+
+
+/* .news div {} */
+
+.news div a {
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.news div button {
+  outline: none;
+  border: none;
+  background: none;
+
+  color: #ff6347;
 }
